@@ -1,0 +1,31 @@
+nav ul li a {
+  color: navy;
+  text-decoration: none;
+}
+
+nav ul li:first-child {
+  font-weight: bold;
+}
+
+nav ul li:last-child {
+  font-style: italic;
+}
+
+
+section.highlight h2::before {
+  content: ">> ";
+  color: darkred;
+}
+
+section.highlight h2::after {
+    content: " <<";
+    color: darkred;
+}
+
+.highlight p {
+    background-color: rgb(166, 214, 228);
+}
+
+.gallery img[src^="https://images.unsplash.com"] {
+    border: 10px solid red;
+}
