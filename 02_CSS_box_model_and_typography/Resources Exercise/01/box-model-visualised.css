@@ -1,0 +1,44 @@
+div {
+    border: 1px dashed grey;
+    padding: 2em;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box-model {
+    width: 600px;
+    margin: 40px auto;
+}
+
+div::before {
+    display: block;
+    position: absolute;
+    top: 0.1em;
+    left: 0.8em;
+    font-size: small;
+}
+
+.content {
+    text-align: center;
+    background-color: rgb(140, 140, 245);
+    padding: 1em;
+}
+
+.padding {
+    background-color: lightgreen;
+}
+.padding::before {
+    content: 'padding';
+}
+
+.border {
+    background-color: blanchedalmond;
+}
+.border::before {
+    content: 'border';
+}
+.margin {
+    background-color: lightsalmon;
+}
+.margin::before {
+    content: 'margin';
+}
