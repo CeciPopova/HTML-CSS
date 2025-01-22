@@ -1,0 +1,48 @@
+
+.flex-container {
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
+    
+    .flex-item {
+        background: #eee;
+        padding: 20px;
+        border: 2px solid #000;
+    }
+    
+    .flex-grow-one .flex-item {
+        flex-grow: 1;
+    }
+
+.flex-grow-2nd-only .flex-item:nth-child(2){
+    flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(1){
+flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.flex-grow-proportional .flex-item:nth-child(3) {
+    flex-grow: 3;
+}
+/*
+⦁	Create a new class "flex-grow-one" and use it to style all .flex-item elements inside it with the following styles
+⦁	flex-grow - 1;
+⦁	Create a new class "flex-grow-2nd-only" and use it to style the 2nd .flex-item element inside it with the following styles
+⦁	flex-grow - 1;
+⦁	Create a new class "flex-grow-proportional" and use it to style each .flex-item element inside it with the following styles
+⦁	Element 1
+⦁	flex-grow - 1;
+⦁	Element 2
+⦁	flex-grow - 2;
+⦁	Element 3
+⦁	flex-grow - 3;
+⦁	Apply the classes to the appropriate .flex-container elements to achieve the results shown in the screenshot

@@ -1,0 +1,34 @@
+.flex-container {
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
+    
+    .flex-item {
+        background: #eee;
+        padding: 20px;
+        border: 2px solid #000;
+    }
+
+    .gap-row {
+        gap: 2em 0;
+    }
+    
+    .gap-column {
+        gap: 0 2em;
+    }
+
+    .gap {
+        gap: 2em;
+    }
+    /*
+⦁	Create a new class "gap-row" with the following styles
+⦁	gap - 2em 0; 
+⦁	Create a new class "gap-column" with the following styles
+⦁	gap - 0 2em;
+⦁	Create a new class "gap" with the following styles
+⦁	gap - 2em;
+⦁	Apply the classes to the appropriate .flex-container elements to achieve the results shown in the screenshot
