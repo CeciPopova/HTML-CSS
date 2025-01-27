@@ -1,0 +1,37 @@
+nav {
+    background-color: lightgrey;
+    border: o.5px solid grey;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(19, 15, 15);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 1em 0;
+  margin: 0.5em;
+  display: flex;
+  gap: 1em;
+}
+nav ul li a {
+    color: orange;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 0.6em;
+    background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 0.2em;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover ul {
+  display: block;
+}

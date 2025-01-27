@@ -1,0 +1,35 @@
+.container {
+  max-width: 800px;
+  background-color: aliceblue;
+  padding: 2em;
+  margin: 0 auto;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.reverse {
+    margin-top: 3em;
+}
+
+
+.reverse aside {
+    order: -1;
+}
+p {
+  border: 1px solid darkgrey;
+  border-radius: 0.2em;
+  padding: 1em;
+  margin: 0.3em;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.sidebar main {
+  flex-grow: 3;
+}
+
+.sidebar aside {
+  flex-grow: 1;
+}
