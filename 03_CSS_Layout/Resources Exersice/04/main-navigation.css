@@ -1,37 +1,46 @@
 nav {
-    background-color: lightgrey;
-    border: o.5px solid grey;
-    border-radius: 0.3em;
-    box-shadow: 0 0 1em 0 rgb(19, 15, 15);
+  background-color: rgb(235, 231, 231);
+  border: 0.5px solid rgb(212, 205, 205);
+  border-radius: 0.3em;
+  box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
 }
 
 nav ul {
   list-style-type: none;
-  padding: 1em 0;
+  padding: 0.4em 0;
   margin: 0.5em;
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
+}
+
+nav ul li {
+  position: relative;
 }
 nav ul li a {
-    color: orange;
-    border: 1px solid rgb(156, 156, 156);
-    border-radius: 0.3em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
-    padding: 0.6em;
-    background-color: white;
-}
-
-nav a {
+  color: orange;
   text-decoration: none;
-  border: 1px solid gray;
-  padding: 0.2em;
+  font-weight: bold;
+  border: 1px solid rgb(187, 184, 184);
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+  padding: 0.5em 1em;
+  background-color: white;
 }
 
-nav ul li ul{
+nav ul ul {
   display: none;
+}
+nav ul li:hover > ul {
+  min-width: 50ch;
+  display: flex;
   position: absolute;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
-nav ul li:hover ul {
-  display: block;
+nav ul ul li:hover > ul {
+  position: relative;
 }
