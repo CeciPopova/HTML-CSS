@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard {
+  width: 800px;
+  padding: 1em;
+  max-width: 800em;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.2em rgb(183, 180, 180);
+  background-color: rgb(211, 207, 207);
+}
+
+div.row {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.5em;
+}
+
+p {
+  display: flex;
+  border-radius: 0.2em;
+  height: 3em;
+  width: 3em;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0.1em 0.2em rgb(183, 180, 180);
+}
+p.dark {
+  background-color: rgb(237, 235, 235);
+  flex-grow: 1;
+}
+
+p.f {
+  max-height: 2.5em;
+}
+
+p.big {
+  flex-grow: 8;
+}
+#enter {
+    border-bottom-right-radius: 0%;
+}
+#enter::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 4em;
+  background-color: rgb(237, 235, 235);
+  border-radius: inherit;
+  box-shadow: inherit;
+  bottom: -3em;
+  left: 0em;
+  position: relative;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+.transperent {
+  background-color: rgb(211, 207, 207);
+  box-shadow: none;
+}
+
+.keyboard p:active {
+    top: 2px;
+    box-shadow: none;
+}
