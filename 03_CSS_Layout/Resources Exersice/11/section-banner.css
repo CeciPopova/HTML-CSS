@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.container {
+    display: flex;
+    width: 85em;
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    background-color: white;
+    padding: 2em;
+    gap: 1em;
+}
+
+.rectangle {
+    width: 80em;
+    margin: 0.5em;
+    background-color: rgb(237, 235, 235);
+    border: 0.1px solid rgb(193, 193, 193);
+    border-radius: 0.3em;
+}
+h2 {
+    opacity: 0.5;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-top: 0;
+}
+p {
+    padding: 1em 0 2em 0;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 0 0.3em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: lightgrey;
+}
+
+button.chat {
+    background-color: rgb(88, 4, 165);
+    color: white;
+}

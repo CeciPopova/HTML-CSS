@@ -43,25 +43,22 @@ p.big {
 }
 #enter {
     border-bottom-right-radius: 0%;
+    position: relative;
+  
 }
 #enter::after {
   content: '';
   display: block;
   width: 3em;
-  height: 4em;
+  height: 3.5em;
   background-color: rgb(237, 235, 235);
   border-radius: inherit;
   box-shadow: inherit;
-  bottom: -3em;
-  left: 0em;
-  position: relative;
+  position: absolute;
+  top: 100%;
+  right: 0;
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;
-}
-
-.transperent {
-  background-color: rgb(211, 207, 207);
-  box-shadow: none;
 }
 
 .keyboard p:active {
