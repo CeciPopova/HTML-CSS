@@ -1,0 +1,33 @@
+.container {
+  max-width: 70em;
+  background-color: white;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+  padding: 2em;
+  margin: 1em auto;
+}
+p {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  padding: 1.5em 2em;
+}
+
+.content {
+  padding: 1em 0;
+  display: flex;
+  gap: 1em;
+}
+
+main {
+  flex-grow: 3;
+}
+
+aside {
+  flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+}

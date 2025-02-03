@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-family: Lato, sans-serif;
+}
+.container {
+ background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.2em;
+    padding: 2rem;
+    color: rgb(22, 216, 22);
+}
+
+.nav {
+    background-color: rgb(78, 78, 78);
+}
+
+.nav li,
+.nav a {
+    display: block;
+}
+
+.nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+
+.content {
+    padding: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 0.5rem 0;
+
+}
+
+p {
+    padding: 0.5em 0;
+}
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.nav a:hover {
+    background-color: black;
+    color: rgb(22, 216, 22);
+ 
+}
+
+@media (max-width: 599px) {
+    ul li + li a{
+        border-top: 1px solid gray;
+    }
+
+    .item {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        max-width: 77em;
+        margin: 0 auto;
+    }
+    header .nav {
+        display: flex; 
+    }
+
+    .nav li {
+        flex: 1 1 auto;
+    }
+    .content {
+        display: flex;
+        gap: 2em;
+    }
+}
