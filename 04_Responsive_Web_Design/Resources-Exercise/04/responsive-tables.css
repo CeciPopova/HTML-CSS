@@ -1,58 +1,79 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #EEE;
+    font: 16px/1.5 Lucida Grande, sans-serif;
+    padding: 3em;
+  }
+  
+  table {
+    background: #FFF;
+    border-radius: 0.5em;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 2em;
+    overflow: hidden;
+  }
+  table th, table td {
+    padding: 0.8em 1em;
+    text-align: left;
+  }
+  table[data-title] {
+    padding-top: 5rem;
+    position: relative;
+  }
+  table:has([data-title]):before {
     display: flex;
-    flex-direction: column;
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 1em;
+    height: 5rem;
+    font-size: 1.6em;
     align-items: center;
-    justify-content: center;
-
-}
-table {
-    background-color: white;
-    padding: 2em;
-    border: 1px solid lightgrey;
-    border-radius: 0.3em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
-    border-collapse: collapse;
-    margin: 2em auto;
-
-}
-caption {
-    background-color: white;
-    padding: 1em;
     font-weight: bold;
-    font-size: large;
-    text-align: left;
-}
-
-table td,
-table th {
-    padding: 0.5em 1em;
-    text-align: left;
-}
-
-table td {
-    border-top: 1px solid lightgrey;
-}
-
-table thead th {
-    background-color: lightgray;
-
-    }
-
-@media (min-width: 800px) {
+  }
+  table thead th {
+    border: solid #CCC;
+    border-width: 1px 0;
+    background: #EEE;
+  }
+  table tbody tr:not(:last-of-type) td {
+    border-bottom: 1px solid #CCC;
+  }
+  
+  @media (width < 800px) {
     table {
-        min-width: 50em;
+      display: block;
     }
-}
-
-
-@media (max-width: 799px) {
-    table {
-        min-width: 30em;
+    table thead {
+      display: none;
     }
-}
-
-@media (min-width: 1000px) {
-    table {
-        min-width: 60em;
+    table tbody {
+      display: block;
     }
-}
+    table tbody tr {
+      display: block;
+      border: solid #000;
+      border-width: 2px 0 0 0;
+    }
+    table tbody td {
+      display: flex;
+      color: #666;
+    }
+    table tbody td:before {
+      display: block;
+      content: attr(data-title);
+      color: #000;
+      font-weight: bold;
+      flex: 0 1 40%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
