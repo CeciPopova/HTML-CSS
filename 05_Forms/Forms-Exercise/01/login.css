@@ -1,0 +1,75 @@
+body {
+    background-color: #ccc;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    padding: 2em;
+    width: 100%;
+    max-width: 25em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.8em 1em;
+}
+
+input:focus {
+    border: 2px solid orange;
+}
+
+.field:has(input:focus) label {
+    color: orange;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+    color: rebeccapurple;
+}
+
+.field:has(input[required]) label::after { 
+    content: '*'; 
+    color: red; 
+    font-weight: bold;
+    margin-left: 0.3em;
+}
+.field {
+    padding-bottom: 1.5em;
+}
+
+.field:has(input:user-invalid) label {
+    color: red;
+}
