@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Login</h2>
+
+        <form action="#">
+
+            <p class="field">
+                <i class="icon fa-solid fa-envelope"></i>
+                <label for="login-email">Email</label>
+                <input type="email" name="login-email" id="email" required />
+                <span class="helper">example: john.doe@gmail.com</span>
+            </p>
+
+            <p class="field">
+                <i class="icon fa-solid fa-key"></i>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+                <span class="helper">minimum 6 charecters,letters and numbers, at least one special character</span>
+            </p>
+
+            <button class="login">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

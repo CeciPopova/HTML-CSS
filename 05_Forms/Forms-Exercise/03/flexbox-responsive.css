@@ -1,0 +1,55 @@
+body {
+    background-color: #ccc;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+form > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.field {
+    padding-bottom: 0;
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    line-height: 1;
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+}
+
+.field label {
+    display: none;
+}
+
+button {
+    display: block;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+}
+
