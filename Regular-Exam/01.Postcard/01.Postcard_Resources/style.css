@@ -1,0 +1,52 @@
+
+.container {
+    width: 50em;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    border-top-right-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+}
+
+main {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    padding: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+p {
+    color: rgb(86, 86, 86);
+    line-height: 1em;
+}
+
+.greetings {
+    background-color: white;
+    padding: 0.3em 1em 1em 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+aside {
+    padding: 1em 2em 2em 2em;
+}
+
+aside h1 {
+    padding-bottom: 1rem;
+}
+
+aside p:not(:last-child) {
+    padding-bottom: 0.5em;
+}

@@ -1,0 +1,7 @@
+@media (max-width: 800px) {
+  .helpNeed ul {
+    flex-direction: column;
+    gap: 2em;
+
+  }
+}
