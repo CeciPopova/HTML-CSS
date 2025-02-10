@@ -12,6 +12,7 @@ body {
 
 header {
   border: 1px solid grey;
+  border-radius: 0.5em;
   position: relative;
 }
 
@@ -186,4 +187,5 @@ footer {
   color: white;
   text-align: center;
   border: 1px solid gray;
+  border-radius: 0.5em;
 }
