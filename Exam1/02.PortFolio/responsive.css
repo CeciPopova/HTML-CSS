@@ -1,1 +1,44 @@
+@media screen and (max-width: 600px) {
+  nav ul {
+    visibility: hidden;
+  }
 
+  nav {
+    position: relative;
+  }
+
+  .checkbtn {
+    display: contents;
+  }
+
+  .fas.fa-bars {
+    position: absolute;
+    right: 1em;
+  }
+  .site-header .flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .fas.fa-heart::before {
+    position: absolute;
+    right: 2.5em;
+    bottom: 0;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    justify-content: center;
+  }
+
+}
