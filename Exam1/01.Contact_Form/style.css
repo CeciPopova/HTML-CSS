@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+label {
+  display: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 2em 4em 1em 0;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 2em 22em 0 0;
+  scrollbar-width: none;
+  color: rgb(119, 118, 118);
+}
+
+button {
+  display: block;
+  margin: 1em 0;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgb(107, 106, 106);
+  color: white;
+  border: none;
+}
+
+footer {
+  margin: 2em 0;
+  color: rgb(98, 97, 97);
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.icons {
+  width: 18em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+aside {
+  margin-bottom: 10em;
+}
+
+.icon {
+  width: 4em;
+  border: 1px solid darkgrey;
+  aspect-ratio: 1.5/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 2em;
+}
+
+footer a {
+  color: rgb(113, 112, 112);
+}

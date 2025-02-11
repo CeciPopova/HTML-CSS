@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
-    
+    <main>
+        <form action="#">
+            <h2>Get in Touch</h2>
+            <div class="fieldset">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <textarea name="message" id="message" placeholder="Message">Message</textarea>
+
+            <button>Send</button>
+        </form>
+
+        <footer>
+            <p>© Untitled. All rights reserved</p>
+            <p>Design: <a href="">HTML & CSS</a></p>
+        </footer>
+    </main>
+    <aside>
+        <h2>Follow</h2>
+        <div class="icons">
+            <div class="x icon"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="f icon"><i class="fa-brands fa-facebook"></i></div>
+            <div class="insta icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="git icon"><i class="fa-brands fa-github"></i></div>
+            <div class="in icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="pin icon"><i class="fa-brands fa-pinterest"></i></div>
+            <div class="threads icon"><i class="fa-brands fa-threads"></i></div>
+            <div class="tel icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="envelope icon"><i class="fa-solid fa-envelope"></i></div>
+        </div>
+    </aside>
+
 </body>
+
 </html>
