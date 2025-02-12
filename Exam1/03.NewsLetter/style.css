@@ -1,2 +1,120 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #4A4A4A;
+}
+
+body {
+  background-color: #C1BBBB;
+}
+
+.container {
+  max-width: 80em;
+  border: 1px solid red;
+  padding: 2em;
+}
+
+.logo {
+  font-family: "Oleo Script", serif;
+  background-color: #57a390;
+  color: white;
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 2em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li a:hover {
+  background-color: black;
+  border-radius: 0.3em;
+  box-shadow:0 0 1em 0 rgb(0, 0, 0, 0.3) ;
+  padding: 0.5em;
+  color: white;
+}
+
+.welcome {
+    background-color: white;
+    margin: 2em 0;
+    padding: 3em 5em;
+    display: flex;
+    gap: 5em;
+    
+}
+
+.welcome .news {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.welcome .buttons .ok{
+    width: 18em;
+    padding: 1em;
+    background-color: #0090c5;
+    margin: 1em 0;
+}
+.welcome .buttons .ok a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome .buttons .info {
+    width: 18em;
+    padding: 1em;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.content {
+    display: flex;
+    gap: 2em;
+}
+
+.content section {
+    width: 30em;
+    background-color: white;
+}
+
+.content section img {
+    width: 100%;
+}
+
+.main-info {
+    padding: 1em;
+}
+
+.main-info h4 {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-weight: bolder;
+}
+.main-info p {
+    font-weight: 100;
+    padding-bottom: 2em;
+}
+.about {
+    display: flex;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+}
