@@ -1,0 +1,31 @@
+@import url(' https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #BEC7C5;
+    padding: 2vw;
+    min-height: 100dvh;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: clamp(12px, 12px + 0.25vw, 14px);
+    font-family: 'Kode Mono' ;
+    font-weight: 100;
+}
+
+p, ul, ol {
+    padding-bottom: 0;
+}
+
+body, input, textarea, table, button {
+    font: inherit;
+}
+
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
